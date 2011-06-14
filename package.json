@@ -1,0 +1,9 @@
+{
+  "name": "cli-easy",
+  "description": "...",
+  "version": "0.0.1",
+
+  "dependencies": {
+    "vows": ">= 0.5.8"
+  }
+}
