@@ -5,5 +5,9 @@
 
   "dependencies": {
     "vows": ">= 0.5.8"
+  },
+
+  "scripts": {
+    "test": "vows --spec tests/*-test.js"
   }
 }
