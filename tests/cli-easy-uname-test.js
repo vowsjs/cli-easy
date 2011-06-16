@@ -29,8 +29,6 @@ CLIEasy.describe('uname test')
          .arg('-wrong-arg')
          .run('-another-wrong-arg')
          .expect('should exit with code = 1', null, 1)
-         .expect('should write to stderr', null, function(stderr) {
-           return /invalid option/.test(stderr);
-         })
+         .expect('should write to stderr', null, /invalid option/)
        .undiscuss()
        .export(module);
