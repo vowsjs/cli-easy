@@ -10,11 +10,13 @@ CLIEasy.describe('uname test')
          .expect('should return Linux', 'Linux\n')
        .undiscuss()
        .discuss('calling with -p')
-         .run('-p')
+         .arg('-p')
+         .run()
          .expect('should return current arch type', /x86_64/)
        .undiscuss()
        .discuss('calling with -r')
-         .run('-r')
+         .arg('-r')
+         .run()
          .expect('should return kernel version', function(version) {
            var re = /^(\d+)\.(\d+)\.(\d+)\-(\d+)-([^\d]+)\n$/,
                match = version.match(re);
@@ -24,7 +26,8 @@ CLIEasy.describe('uname test')
          })
        .undiscuss()
        .discuss('calling with wrong arguments')
-         .run('-wrong-arg')
+         .arg('-wrong-arg')
+         .run('-another-wrong-arg')
          .expect('should exit with code = 1', null, 1)
          .expect('should write to stderr', null, function(stderr) {
            return /invalid option/.test(stderr);
