@@ -11,17 +11,14 @@ var CLIEasy = require('../lib/cli-easy');
 CLIEasy.describe('uname test')
        .use('uname')
        .discuss('calling without arguments')
-         .run()
          .expect('should return Linux', 'Linux\n')
        .undiscuss()
        .discuss('calling with -p')
          .arg('-p')
-         .run()
          .expect('should return current arch type', /x86_64/)
        .undiscuss()
        .discuss('calling with -r')
          .arg('-r')
-         .run()
          .expect('should return kernel version', function(version) {
            var re = /^(\d+)\.(\d+)\.(\d+)\-(\d+)-([^\d]+)\n$/,
                match = version.match(re);

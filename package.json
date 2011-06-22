@@ -16,6 +16,6 @@
     "vows": ">= 0.5.8"
   },
   "main": "./lib/cli-easy",
-  "scripts": { "test": "vows --spec tests/*-test.js" },
+  "scripts": { "test": "vows --spec test/*-test.js" },
   "engines": { "node": ">= 0.4.0" }
 }
