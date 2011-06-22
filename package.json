@@ -1,13 +1,21 @@
 {
   "name": "cli-easy",
-  "description": "...",
-  "version": "0.0.1",
-
+  "description": "Fluent (i.e. chainable) syntax for generating vows tests against CLI tools.",
+  "version": "0.1.0",
+  "author": "Nodejitsu <info@nodejitsu.com>",
+  "contributors": [
+    { "name": "Charlie Robbins", "email": "charlie.robbins@gmail.com" }, 
+    { "name": "Fedor Indutny", "email": "fedor.indutny@gmail.com" }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/nodejitsu/cli-easy.git" 
+  },
+  "keywords": ["tools", "testing", "cli", "vows"],  
   "dependencies": {
     "vows": ">= 0.5.8"
   },
-
-  "scripts": {
-    "test": "vows --spec tests/*-test.js"
-  }
+  "main": "./lib/cli-easy",
+  "scripts": { "test": "vows --spec tests/*-test.js" },
+  "engines": { "node": ">= 0.4.0" }
 }
