@@ -1,6 +1,11 @@
-/**
- * Cli-Easy test
+/*
+ * cli-easy-uname-test.js: Sample tests for the `uname` command
+ * 
+ * (C) 2011 Nodejitsu Inc.
+ * MIT LICENCE
+ *
  */
+ 
 var CLIEasy = require('../lib/cli-easy');
 
 CLIEasy.describe('uname test')

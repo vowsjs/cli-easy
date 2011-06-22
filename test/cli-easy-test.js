@@ -1,8 +1,11 @@
-/**
- * Cli-Easy
+/*
+ * cli-easy-test.js: Core tests for the cli-easy module
+ * 
+ * (C) 2011 Nodejitsu Inc.
+ * MIT LICENCE
  *
- * Test suite
  */
+ 
 var vows = require('vows'),
     assert = require('assert');
 
